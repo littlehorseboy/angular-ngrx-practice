@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-ngrx-practice"
+    }
+  },
+  "defaultProject": "angular-ngrx-practice",
+  "cli": {
+    "analytics": false
+  }
 }
