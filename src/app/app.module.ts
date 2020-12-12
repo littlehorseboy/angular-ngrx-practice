@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { StoreModule } from '@ngrx/store';
 
 import { counterReducer } from './state/reducers/counter.reducer';
+import { booksReducer } from './state/reducers/books.reducer';
+import { booksCollectionReducer } from './state/reducers/books-collection.reducer';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +21,8 @@ import { BookListComponent } from './book-list/book-list.component';
     BrowserModule,
     StoreModule.forRoot({
       count: counterReducer,
+      books: booksReducer,
+      booksCollection: booksCollectionReducer,
     }),
     AppRoutingModule
   ],
